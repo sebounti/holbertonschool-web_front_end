@@ -1,0 +1,21 @@
+/* Cibler l'élément racine et définir les propriétés personnalisées suivantes */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+/* Réviser les déclarations pour section-tagline et card-category */
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Réviser les déclarations pour body et anchor */
+body,
+a {
+  color: var(--text-color);
+}
