@@ -1,0 +1,24 @@
+/* Déclaration pour le corps */
+body {
+  color: #161616;
+}
+
+/* Déclaration pour tous les éléments d'ancrage (balise <a>) */
+a {
+  color: #161616;
+}
+
+/* Déclaration pour tous les éléments avec la classe "visually-hidden" */
+.visually-hidden {
+  display: none;
+}
+
+/* Déclaration pour tous les éléments avec la classe "card-category" */
+.card-category {
+  color: #D73953;
+}
+
+/* Déclaration pour tous les éléments avec la classe "section-tagline" */
+.section-tagline {
+  color: #D73953;
+}
