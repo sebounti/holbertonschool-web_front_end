@@ -1,15 +1,39 @@
-/* Cibler l'élément racine et créer 2 propriétés de font-family personnalisées : font-family-base et font-family-title */
 :root {
-  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Définir la font-family du body sur font-family-base */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  color: #161616;
   font-family: var(--font-family-base);
 }
 
-/* Créer une nouvelle déclaration ciblant les 6 niveaux de titres de section, placée avant la déclaration pour les liens */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
+}
+
+a {
+  color: #161616;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.card-category {
+  color: #d73953;
+}
+
+.section-tagline {
+  color: #d73953;
 }
