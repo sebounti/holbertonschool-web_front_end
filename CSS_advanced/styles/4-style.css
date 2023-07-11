@@ -1,0 +1,15 @@
+/* Cibler l'élément racine et créer 2 propriétés de font-family personnalisées : font-family-base et font-family-title */
+:root {
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Définir la font-family du body sur font-family-base */
+body {
+  font-family: var(--font-family-base);
+}
+
+/* Créer une nouvelle déclaration ciblant les 6 niveaux de titres de section, placée avant la déclaration pour les liens */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
