@@ -50,6 +50,11 @@ a[href] {
   /* Déclarations de style spécifiques pour les liens hypertexte */
 }
 
+:link {
+  color: #161616;
+  text-decoration: none;
+}
+
 a:visited {
   font-style: italic;
 }
