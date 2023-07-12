@@ -50,7 +50,7 @@ a[href] {
   /* Déclarations de style spécifiques pour les liens hypertexte */
 }
 
-:link {
+a:link {
   color: #161616;
   text-decoration: none;
 }
