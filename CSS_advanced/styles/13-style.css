@@ -1,4 +1,3 @@
-
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -43,11 +42,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
-}
-
-
-a[href] {
-  /* Déclarations de style spécifiques pour les liens hypertexte */
 }
 
 a:link {
