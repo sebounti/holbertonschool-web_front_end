@@ -23,12 +23,10 @@
   --section-title-color: var(--color-black);
 }
 
-
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
-
 
 body {
   color: #161616;
@@ -37,7 +35,6 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
@@ -57,7 +54,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a.active {
+a:active {
   background-color: var(--color-light-grey);
 }
 
@@ -77,14 +74,12 @@ a.active {
   color: var(--section-title-color);
 }
 
-
 .section-tagline {
   color: #d73953;
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
-
 
 .section-header {
   text-align: var(--section-header-align);
