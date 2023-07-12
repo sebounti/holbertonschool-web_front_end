@@ -57,14 +57,11 @@ a {
 
 .section-tagline {
   color: #d73953;
-}
-
-.section-header {
-  color:#d73953;
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
+
 
 .section-header {
   text-align: var(--section-header-align);
