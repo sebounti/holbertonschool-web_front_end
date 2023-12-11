@@ -4,13 +4,14 @@
 	font-size: 12px;
 }
 
-	.warning {
+	.sucess {
 
 	@extend .info;
 	color: #00FF00;
 	}
 
-	.success {
-		@extend .info;
-		color:#FF0000 ;
+	.warning {
+
+	@extend .info;
+	color:#FF0000 ;
 	}
