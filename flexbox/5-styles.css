@@ -256,7 +256,7 @@
          background: transparent;
   }
 
-  .header_container {
+  .header-container {
     display:flex;
     justify-content: space-between;
 
