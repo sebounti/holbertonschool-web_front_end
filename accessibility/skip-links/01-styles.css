@@ -190,7 +190,7 @@
   }
 
   .off-screen {
-    left: -100wv;
+    left: -100vw;
     position: absolute;
   }
 
