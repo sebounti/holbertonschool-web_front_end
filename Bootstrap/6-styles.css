@@ -1,0 +1,74 @@
+/* Couleur de fond pour btn-primary */
+.btn-primary {
+  background-color: #E0003C;
+}
+
+/* Couleur de fond pour btn-primary au survol, focus et actif */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #E0003C;
+}
+
+.btn {
+  border-radius: 1rem;
+  border: 1px solid #E0003C;
+
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #E0003C;
+  color: #FFFFFF;
+  border-color: #E0003C;
+}
+
+.btn-primary:hover {
+  color: #FFFFFF;
+  border-color: #E0003C;
+}
+
+/* Couleur de texte et de bordure pour btn-outline-primary */
+.btn-outline-primary {
+  color: #E0003C;
+  border-color: #E0003C;
+}
+
+.card-header:first-child {
+  border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #E0003C!important;
+}
+/* Couleur de texte pour les liens */
+a {
+  color: #E0003C;
+}
+
+a.text-dark:hover,
+a.text-dark:focus {
+  color: #E0003C !important;
+  text-decoration: none;
+}
+/* Couleur de texte pour les liens au survol et focus */
+a:hover,
+a:focus {
+  color: #E0003C;
+}
+
+/* Style des cartes */
+.card, .card-header, .card-footer {
+  border-color: #E0003C;
+  border-radius: 1rem;
+  border: 1px solid #E0003C;}
+
+.card-header {
+  background-color: #E0003C;
+  color: #FFFFFF;
+}
+/* Couleur de texte pour .text-muted */
+.text-muted {
+  color: #8C8C8C!important;
+}
