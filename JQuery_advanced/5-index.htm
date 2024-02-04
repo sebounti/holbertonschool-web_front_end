@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 5</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <style>
+          .remove-cell {
+            background-color: orange;
+            cursor:pointer;
+          }
+        </style>
+    </head>
+
+  <body>
+      <script type="application/javascript">
+        $( document ).ready(function() {
+
+          function createFamilyTree() {
+            var table = document.createElement("table");//creat tableau
+            var thead = document.createElement("thead");//creat entete
+            var tbody = document.createElement("tbody");//creat corps
+            var headerRow = document.createElement("tr");//creat ligne
+            var firstNameHeader = document.createElement("th");//creat colonne1
+            var lastNameHeader = document.createElement("th");//creat colonne2
+
+
+
+            firstNameHeader.textContent = "Firstname"; //attribue text colonne1
+            lastNameHeader.textContent = "Lastname"; //attribue text colonne2
+            headerRow.appendChild(firstNameHeader);//ajoute colonne1
+            headerRow.appendChild(lastNameHeader);//ajoute colonne2
+            thead.appendChild(headerRow);//ajoute ligne
+            table.appendChild(thead);//ajoute entete
+            table.appendChild(tbody);//ajoute corps
+            document.body.appendChild(table);//ajoute tableau
+          }
+
+          function addNewMember(Firstname, Lastname) {
+            var tableBody = document.querySelector("table tbody");//selectionne corps
+            var row = document.createElement("tr");//cree nouvelle ligne
+            var firstName = document.createElement("td");// cree nouvelle colonne1
+            var lastName = document.createElement("td");// cree nouvelle colonne2
+            var removeCell = document.createElement("td"); //cree nouvelle colonne3
+
+            firstName.textContent = Firstname;//attribue text colonne1
+            lastName.textContent = Lastname;//attribue text colonne2
+            removeCell.textContent = '(x)';//attribue text colonne3 supression
+            removeCell.classList.add("remove-cell");//ajoute class css
+            removeCell.onclick = function() { row.remove(); };//suprime ligne
+
+            row.appendChild(firstName);//ajoute colonne1
+            row.appendChild(lastName);//ajoute colonne2
+            row.appendChild(removeCell);//ajoute colonne3
+            tableBody.appendChild(row);//ajoute ligne
+          }
+
+          createFamilyTree()
+
+          addNewMember("Guillaume", "Salva");//ajoute membre
+          addNewMember("Arielle", "Snizt");
+          addNewMember("Fanette", "Snizt");
+          addNewMember("Gerard", "Snizt");
+          addNewMember("victor", "Salva");
+
+        });
+
+      </script>
+  </body>
+  </html>
