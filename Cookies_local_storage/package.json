@@ -1,0 +1,12 @@
+{
+	"name": "Cookieslocalstorage",
+	"version": "1.0.0",
+	"description": "cookies",
+	"scripts": {
+		"start": "node_modules/.bin/webpack-dev-server"
+	},
+	"devDependencies": {
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1"
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task2</title>
+  <script>
+    function setCookies() {
+      const firstname = document.getElementById('firstname').value;
+      const email = document.getElementById('email').value;
+
+      // Set the cookies to expire in 10 days
+      let date = new Date();
+      date.setTime(date.getTime() + (10*24*60*60*1000));
+      let expires = "expires=" + date.toUTCString();
+
+      // Set the cookies
+      document.cookie = "firstname=" + firstname + ";path=/;" + expires;
+      document.cookie = "email=" + email + ";path=/;" + expires;
+    }
+
+    function showCookies() {
+      // Get the cookies
+      const email = getCookies("email");
+      const firstname = getCookies("firstname");
+
+      // Create a paragraph element
+      const p = document.createElement('p');
+      p.innerHTML = "Cookies: " + "firstname=" + firstname + " email=" + email;
+
+      // Append the paragraph to the body
+      document.body.appendChild(p);
+    }
+
+    function getCookies(name) {
+       let cookieName = name + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';'); // ca = cookie array
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(cookieName) == 0) {
+          return c.substring(cookieName.length, c.length);
+        }
+    }
+    return "";
+  }
+  </script>
+</head>
+<body>
+  <input type="text" id="firstname" placeholder="first name">
+  <input type="text" id="email" aria-placeholder="Email">
+  <button onclick="setCookies()">log me in </button>
+  <button onclick="showCookies()">Show the cookies</button>
+</body>
+</html>
